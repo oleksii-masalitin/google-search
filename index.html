@@ -2,14 +2,22 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <style>
+            #image_link{
+                color:gray; text-align: right;
+            }
+            #search{
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-        <form action="https://www.google.com/">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
         <div id="image_link">
             <a href="images.html"> Image Search </a>
         </div>
+        <form id="search" action="https://google.com/search">
+            <input type="text" name="q">
+            <input type="submit" value="Google Search">
+        </form>
     </body>
 </html>
