@@ -12,7 +12,10 @@
                 text-decoration: none;
             }
             #search {
-                text-align: center;
+                display: flex;
+                height: 400px;
+                align-items: flex-end;
+                justify-content: center;
             }
             #image_link {
                 text-align: right;
@@ -23,9 +26,12 @@
         <div id="image_link">
             <a href="images.html"> Image Search </a>
         </div>
-        <form id="search" action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <div id="search">
+            <form action="https://google.com/search">
+                <input type="text" name="q">
+                <input type="submit" value="Google Search">
+                <input type="submit" value="I'm feeling lucky">
+            </form>
+        </div>
     </body>
 </html>
