@@ -13,12 +13,20 @@
             }
             #search {
                 display: flex;
-                height: 400px;
+                height: 310px;
                 align-items: flex-end;
                 justify-content: center;
             }
             #image_link {
                 text-align: right;
+            }
+            .button {
+                width: 130px;
+                background-color: whitesmoke;
+                color: dimgray;
+                height: 40px;
+                border: none;
+                font-size: 14px;
             }
         </style>
     </head>
@@ -28,9 +36,9 @@
         </div>
         <div id="search">
             <form action="https://google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
-                <input type="submit" value="I'm feeling lucky">
+                <input class="text" type="text" name="q">
+                <input class="button" type="submit" value="Google Search">
+                <input class="button" type="submit" value="I'm Feeling Lucky">
             </form>
         </div>
     </body>
