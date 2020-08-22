@@ -28,20 +28,27 @@
                 width: 470px;
                 padding-left: 30px;
                 height: 43px;
-                border-radius: 20px;
+                border-radius: 25px;
                 font-size: 20px;
                 border: 0.8px solid;
                 border-color: lightgray;
             }
             .button {
-                text-align: center;
-                margin: 10px 10px 10px 10px;
+                margin: 30px 10px 10px 0px;
                 width: 130px;
                 background-color: whitesmoke;
                 color: dimgray;
                 height: 40px;
                 border: none;
                 font-size: 14px;
+                border-radius: 4px;
+            }
+            .button:hover{
+                border: 1px solid lightgray;
+                color: black;
+            }
+            #button1{
+                margin-left: 110px;
             }
         </style>
     </head>
@@ -52,7 +59,7 @@
         <div id="search">
             <form action="https://google.com/search">
                 <input class="text" type="text" name="q"><br>
-                <input class="button" type="submit" value="Google Search">
+                <input class="button" id="button1" type="submit" value="Google Search">
                 <input class="button" type="submit" value="I'm Feeling Lucky">
             </form>
         </div>
