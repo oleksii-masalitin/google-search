@@ -8,15 +8,46 @@
                 text-decoration: none;
             }
             a:visited {
-                color: blue;
+                color: dimgray;
                 text-decoration: none;
             }
-            #search {
-                display: flex;
-                justify-content: center;
+            a:hover{
+                color: dimgray;
+                text-decoration: underline;
             }
             #search_link {
                 text-align: right;
+            }
+            .text{
+                width: 470px;
+                padding-left: 30px;
+                height: 43px;
+                border-radius: 25px;
+                font-size: 20px;
+                border: 0.8px solid;
+                border-color: lightgray;
+            }
+            .button {
+                margin-top: 30px;
+                width: 130px;
+                background-color: whitesmoke;
+                color: dimgray;
+                height: 40px;
+                border: none;
+                font-size: 14px;
+                border-radius: 4px;
+                align-self: center;
+                margin-left: 190px;
+            }
+            .button:hover{
+                border: 1px solid lightgray;
+                color: black;
+            }
+            #search {
+                display: flex;
+                height: 370px;
+                align-items: flex-end;
+                justify-content: center;
             }
         </style>
     </head>
@@ -24,9 +55,11 @@
         <div id="search_link">
             <a href="index.html"> Google Search </a>
         </div>
-        <form id="search" action="https://images.google.com/images">
-            <input type="text" name="q">
-            <input type="submit" value="Image Search">
-        </form>
+        <div id="search">
+            <form action="https://images.google.com/images">
+                <input class="text" type="text" name="q"><br>
+                <input class="button" type="submit" value="Image Search">
+            </form>
+        </div>
     </body>
 </html>
