@@ -18,11 +18,87 @@
             #search_link {
                 text-align: right;
             }
+            #head1 {
+                color: red;
+                font-weight: normal;
+                font-size: 20px;
+                margin-left: 35px;
+                font-family: sans-serif;
+                margin-top: 0px;
+                margin-bottom: 25px;
+            }
+            #box1 {
+                border-bottom: 1px solid lightgray;
+            }
+            #box2 {
+                margin-left: 35px;
+                font-family: sans-serif;
+                margin-top: 30px;
+            }
+            #headtable1 {
+                font-weight: normal;
+                font-size: 16px;
+                font-family: sans-serif;
+                text-align: left;
+                height: 40px;
+            }
+            #headtable2 {
+                width: 550px;
+            }
+            #headtable3 {
+                font-family: sans-serif;
+                text-align: left;
+                color: gray;
+                font-weight: bold;
+                font-size: 13px;
+            }
+            .coloumn1 {
+                font-weight: normal;
+                text-align: left;
+                font-size: 13px;
+            }
+            .row {
+                height: 40px;
+            }
         </style>
     </head>
     <body>
         <div id="search_link">
             <a href="index.html"> Google Search </a>
+        </div>
+        <div id="box1">
+            <h1 id="head1"> Advanced Search </h1>
+        </div>
+        <div id="box2">
+            <table>
+                <thead>
+                    <th id="headtable1">Find pages with...</th>
+                    <th id="headtable2"> </th>
+                    <th id="headtable3">To do this in the search box.</th>
+                </thead>
+                <tbody>
+                    <tr class="row">
+                        <td class="coloumn1">all these words:</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="coloumn1">this exact word or phrase:</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="coloumn1">any of these words:</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="coloumn1">none of these words:</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </body>
 </html>
