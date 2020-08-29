@@ -44,7 +44,7 @@
                 height: 50px;
             }
             #headtable2 {
-                width: 550px;
+                widdiv: 550px;
             }
             #headtable3 {
                 font-family: sans-serif;
@@ -65,7 +65,7 @@
                 font-size: 13px;
                 height: 22px;
                 font-family: sans-serif;
-                width: 545px;
+                widdiv: 545px;
                 border: 1px solid gray;
             }
             .coloumn3 {
@@ -77,6 +77,11 @@
             .row {
                 height: 50px;
             }
+            #grid {
+                display: grid;
+                grid-template-columns: 200px auto 250px;
+                grid-row-gap: 30px;
+            }
         </style>
     </head>
     <body>
@@ -87,48 +92,36 @@
             <h1 id="head1"> Advanced Search </h1>
         </div>
         <div id="box2">
-            <table>
-                <thead>
-                    <th id="headtable1">Find pages with...</th>
-                    <th id="headtable2"> </th>
-                    <th id="headtable3">To do this in the search box.</th>
-                </thead>
-                <tbody>
-                    <tr class="row">
-                        <td class="coloumn1">all these words:</td>
-                        <td class="coloumn2"><form action="https://google.com/search">
-                        <input class="text" type="text" name="as_q"><br>
-                        </form>
-                        </td>
-                        <td class="coloumn3">Type the important words:  tri-colour rat terrier</td>
-                    </tr>
-                    <tr class="row">
-                        <td class="coloumn1">this exact word or phrase:</td>
-                        <td class="coloumn2"><form action="https://google.com/search">
-                        <input class="text" type="text" name="as_epq"><br>
-                        </form>
-                        </td>
-                        <td class="coloumn3">Put exact words in quotes:  "rat terrier"</td>
-                    </tr>
-                    <tr class="row">
-                        <td class="coloumn1">any of these words:</td>
-                        <td class="coloumn2"><form action="https://google.com/search">
-                        <input class="text" type="text" name="as_oq"><br>
-                        </form>
-                        </td>
-                        <td class="coloumn3">Type OR between all the words you want:  miniature OR standard</td>
-                    </tr>
-                    <tr class="row">
-                        <td class="coloumn1">none of these words:</td>
-                        <td class="coloumn2"><form action="https://google.com/search">
-                        <input class="text" type="text" name="as_eq"><br>
-                        </form>
-                        </td>
-                        <td class="coloumn3">Put a minus sign just before words that you don't want:<br>
-                        -rodent, -"Jack Russell"</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div id="grid">
+                <div id="headtable1">Find pages widiv...</div>
+                <div id="headtable2"> </div>
+                <div id="headtable3">To do divis in dive search box.</div>
+                <div class="coloumn1">all divese words:</div>
+                <div class="coloumn2"><form action="https://google.com/search">
+                <input class="text" type="text" name="as_q"><br>
+                </form>
+                </div>
+                <div class="coloumn3">Type dive important words:  tri-colour rat terrier</div>
+                <div class="coloumn1">divis exact word or phrase:</div>
+                <div class="coloumn2"><form action="https://google.com/search">
+                <input class="text" type="text" name="as_epq"><br>
+                </form>
+                </div>
+                <div class="coloumn3">Put exact words in quotes:  "rat terrier"</div>
+                <div class="coloumn1">any of divese words:</div>
+                <div class="coloumn2"><form action="https://google.com/search">
+                <input class="text" type="text" name="as_oq"><br>
+                </form>
+                </div>
+                <div class="coloumn3">Type OR between all dive words you want:  miniature OR standard</div>
+                <div class="coloumn1">none of divese words:</div>
+                <div class="coloumn2"><form action="https://google.com/search">
+                <input class="text" type="text" name="as_eq"><br>
+                </form>
+                </div>
+                <div class="coloumn3">Put a minus sign just before words divat you don't want:<br>
+                -rodent, -"Jack Russell"</div>
+            </div>
         </div>
     </body>
 </html>
