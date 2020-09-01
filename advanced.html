@@ -34,7 +34,7 @@
             #box2 {
                 margin-left: 35px;
                 font-family: sans-serif;
-                margin-top: 30px;
+                margin-top: 50px;
             }
             #headtable1 {
                 font-weight: normal;
@@ -42,9 +42,6 @@
                 font-family: sans-serif;
                 text-align: left;
                 height: 50px;
-            }
-            #headtable2 {
-                widdiv: 550px;
             }
             #headtable3 {
                 font-family: sans-serif;
@@ -57,16 +54,18 @@
                 font-weight: normal;
                 text-align: left;
                 font-size: 13px;
+                padding-top: 5px;
             }
             .coloumn2 {
                 padding-left: 15px;
+                text-align: center;
             }
             .text {
                 font-size: 13px;
-                height: 22px;
+                height: 25px;
                 font-family: sans-serif;
-                widdiv: 545px;
-                border: 1px solid gray;
+                width: 100%;
+                border: 1px solid lightgray;
             }
             .coloumn3 {
                 font-family: sans-serif;
@@ -74,13 +73,22 @@
                 font-size: 11px;
                 padding-left: 12px;
             }
-            .row {
-                height: 50px;
-            }
             #grid {
                 display: grid;
-                grid-template-columns: 200px auto 250px;
-                grid-row-gap: 30px;
+                grid-template-columns: 160px auto 280px;
+                grid-row-gap: 15px;
+                grid-template-rows: 30px 30px 30px 30px 30px;
+            }
+            @media (max-width: 1080px) {
+                .coloumn3 {
+                    display: none;
+                }
+                #headtable3 {
+                    display: none;
+                }
+                #grid {
+                grid-template-columns: 200px auto;
+            }
             }
         </style>
     </head>
@@ -93,33 +101,33 @@
         </div>
         <div id="box2">
             <div id="grid">
-                <div id="headtable1">Find pages widiv...</div>
+                <div id="headtable1">Find pages width...</div>
                 <div id="headtable2"> </div>
-                <div id="headtable3">To do divis in dive search box.</div>
-                <div class="coloumn1">all divese words:</div>
+                <div id="headtable3">To do this in the search box.</div>
+                <div class="coloumn1">all these words:</div>
                 <div class="coloumn2"><form action="https://google.com/search">
                 <input class="text" type="text" name="as_q"><br>
                 </form>
                 </div>
-                <div class="coloumn3">Type dive important words:  tri-colour rat terrier</div>
-                <div class="coloumn1">divis exact word or phrase:</div>
+                <div class="coloumn3" style="padding-top: 5px">Type the important words:  tri-colour rat terrier</div>
+                <div class="coloumn1">this exact word or phrase:</div>
                 <div class="coloumn2"><form action="https://google.com/search">
                 <input class="text" type="text" name="as_epq"><br>
                 </form>
                 </div>
-                <div class="coloumn3">Put exact words in quotes:  "rat terrier"</div>
-                <div class="coloumn1">any of divese words:</div>
+                <div class="coloumn3" style="padding-top: 5px">Put exact words in quotes:  "rat terrier"</div>
+                <div class="coloumn1">any of these words:</div>
                 <div class="coloumn2"><form action="https://google.com/search">
                 <input class="text" type="text" name="as_oq"><br>
                 </form>
                 </div>
-                <div class="coloumn3">Type OR between all dive words you want:  miniature OR standard</div>
-                <div class="coloumn1">none of divese words:</div>
+                <div class="coloumn3">Type OR between all the words you want:  miniature OR standard</div>
+                <div class="coloumn1">none of these words:</div>
                 <div class="coloumn2"><form action="https://google.com/search">
                 <input class="text" type="text" name="as_eq"><br>
                 </form>
                 </div>
-                <div class="coloumn3">Put a minus sign just before words divat you don't want:<br>
+                <div class="coloumn3">Put a minus sign just before words that you don't want:<br>
                 -rodent, -"Jack Russell"</div>
             </div>
         </div>
